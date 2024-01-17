@@ -18,7 +18,12 @@ let getData = () => {
         total.innerHTML = ' '
     }
 }
-const allProducts = []
+let allProducts;
+if(localStorage.product !== null) {
+    allProducts = JSON.parse(localStorage.product)
+} else {
+    allProducts = []
+}
 
 sumbit.onclick = function() {
     let newProducts = {
@@ -32,5 +37,17 @@ sumbit.onclick = function() {
         count: count.value
     }
     allProducts.push(newProducts)
-    console.log(allProducts)
+    localStorage.setItem('product', JSON.stringify(allProducts))
+    clearData()
+}
+
+const clearData = () => {
+    title.value = '';
+    category.value = '';
+    price.value = '';
+    ads.value = ''
+    taxes.value = '';
+    discount.value = '';
+    count.value = '';
+    total.innerHTML = ''
 }

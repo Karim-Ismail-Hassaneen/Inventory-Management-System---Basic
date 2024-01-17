@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/dash-style.css" />
+  <title>Dashboard</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <h2>Dashboard</h2>
+      <p>INVENTORY MANAGEMENT SYSTEM</p>
+    </div>
+    <div class="inputs">
+      <div class="first-form">
+        <input class="field" type="text" placeholder="Title" id="title">
+        <input class="field" type="text" placeholder="Category" id="category">
+      </div>
+        <div class="price">
+          <input class="field" onkeyup="getData()" type="number" placeholder="Price" id="price">
+          <input class="field" onkeyup="getData()" type="number" placeholder="Taxes" id="taxes">
+          <input class="field" onkeyup="getData()" type="number" placeholder="Ads" id="ads">
+          <input class="field" onkeyup="getData()" type="number" placeholder="Discount" id="discount">
+          <small class="total-price" id="total">000</small>
+        </div>
+      <div class="final-form">
+        <input class="field" type="number" placeholder="Count" id="count">
+      </div>
+      <div class="btn">
+        <button id="sumbit">Create</button>
+      </div>
+    </div>
+
+    <div class="form">
+      <input type="search" placeholder="Search" id="search" />
+    </div>
+    <div class="seach-btn">
+      <button id="serch-title">Search by Title</button>
+      <button id="search-price">Search by Price</button>
+    </div>
+    <div class="content">
+      <table>
+        <tr>
+          <th>Id</th>
+          <th>Title</th>
+          <th>Category</th>
+          <th>Price</th>
+          <th>Taxes</th>
+          <th>Ads</th>
+          <th>Discount</th>
+          <th>Edit</th>
+          <th>Delete</th>
+        </tr>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>samsung</td>
+            <td>Phones</td>
+            <td>5000</td>
+            <td>500</td>
+            <td>200</td>
+            <td>0.10</td>
+            <td>
+              <button class="action" id="update">Update</button>
+            </td>
+            <td>
+              <button class="action" id="delete">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

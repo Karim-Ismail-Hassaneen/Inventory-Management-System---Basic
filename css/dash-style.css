@@ -4,7 +4,11 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     background-color: whitesmoke;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
+}
+.container {
+    width: 100%;
+    margin: auto;
 }
 .header {
     margin: 1.5rem;
@@ -22,7 +26,7 @@
     }
 }
 
-input {
+#search {
     font-size: 18px;
     width: 93.5%;
     outline: none;
@@ -31,7 +35,10 @@ input {
     margin: 0 1.5rem;
     transition: 0.7s ease-in-out;
 }
-input:focus {
+#search:focus {
+    letter-spacing: 5px;
+}
+#sumbit:hover {
     letter-spacing: 5px;
 }
 table {
@@ -48,7 +55,6 @@ table {
 }
 
 .btn {
-    width: 100%;
     margin: 1.5rem;
 }
 
@@ -73,4 +79,43 @@ button {
 
 table th {
     text-transform: uppercase;
+}
+
+
+.field {
+    font-size: 18px;
+    width: 94%;
+    outline: none;
+    border: 1px solid #191c1e;
+    padding: 0.8rem;
+    margin: 20px;
+    transition: 0.7s ease-in-out;
+}
+.field:focus {
+    letter-spacing: 5px;
+}
+
+.total-price {
+    font-size: 18px;
+    width: 100%;
+    outline: none;
+    border: 1px solid #191c1e;
+    padding: 0.8rem;
+    margin: 20px;
+}
+
+.price {
+    display: flex;
+    width: 96%;
+}
+.btn button {
+    font-size: 18px;
+    width: 96%;
+    outline: none;
+    border: none;
+    background-color: #191c1e;
+    color: whitesmoke;
+    padding: 0.8rem;
+    transition: 0.7s ease-in-out;
+    cursor: pointer;
 }
