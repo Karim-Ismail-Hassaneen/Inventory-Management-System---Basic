@@ -1,0 +1,76 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: whitesmoke;
+    overflow-x: hidden;
+}
+.header {
+    margin: 1.5rem;
+    h2 {
+        font-size: 2rem;
+        color: #191c1e;
+    }
+
+    p {
+        font-size: 1.2rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #191c1e;
+        margin-top: 10px;
+    }
+}
+
+input {
+    font-size: 18px;
+    width: 93.5%;
+    outline: none;
+    border: 1px solid #191c1e;
+    padding: 0.8rem;
+    margin: 0 1.5rem;
+    transition: 0.7s ease-in-out;
+}
+input:focus {
+    letter-spacing: 5px;
+}
+table {
+    width: 100%;
+    text-align: center;
+    margin: 15px 0;
+}
+.action {
+    font-size: 18px;
+    background-color: #191c1e;
+    color: whitesmoke;
+    padding: 0.6rem;
+    cursor: pointer
+}
+
+.btn {
+    width: 100%;
+    margin: 1.5rem;
+}
+
+.seach-btn {
+    width: 94%;
+    margin: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+button {
+    font-size: 18px;
+    outline: none;
+    border: none;
+    background-color: #191c1e;
+    color: whitesmoke;
+    padding: 0.8rem;
+    transition: 0.7s ease-in-out;
+    cursor: pointer;
+}
+
+table th {
+    text-transform: uppercase;
+}

@@ -1,0 +1,79 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: whitesmoke;
+}
+
+.container {
+    max-width:80%;
+}
+
+.header {
+    margin: 1.5rem;
+    h1 {
+        font-size: 2rem;
+        color: #191c1e;
+    }
+
+    p {
+        font-size: 1.2rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #191c1e;
+        margin-top: 10px;
+    }
+}
+
+.inputs {
+    margin:0 50px;
+}
+
+input {
+    font-size: 18px;
+    width: 80%;
+    outline: none;
+    border: 1px solid #191c1e;
+    padding: 0.8rem;
+    margin: 30px 10px;
+    transition: 0.7s ease-in-out;
+}
+input:focus {
+    letter-spacing: 5px;
+    transform: scale(1.05);
+}
+.total-price {
+    font-size: 18px;
+    width: 80%;
+    outline: none;
+    border: 1px solid #191c1e;
+    padding: 0.8rem;
+    margin: 30px 10px;
+}
+
+.price-one {
+    display: flex;
+    width: 80%;
+}
+
+.price-two {
+    display: flex;
+    width: 81.5%;
+}
+
+.btn button {
+    font-size: 18px;
+    width: 81%;
+    outline: none;
+    border: none;
+    background-color: #191c1e;
+    color: whitesmoke;
+    padding: 0.8rem;
+    transition: 0.7s ease-in-out;
+    cursor: pointer;
+}
+.btn button:hover {
+    letter-spacing: 5px;
+    transform: scale(1.05);
+}
