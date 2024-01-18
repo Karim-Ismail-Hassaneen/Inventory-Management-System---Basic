@@ -35,11 +35,11 @@
     </div>
 
     <div class="form">
-      <input type="search" placeholder="Search" id="search" />
+      <input onkeyup="handleSearch(this.value)" type="search" placeholder="Search" id="search" />
     </div>
     <div class="search-btn">
-      <button id="search-title">Search by Title</button>
-      <button id="search-price">Search by Price</button>
+      <button onclick="searchData(this.id)" id="search-title">Search by Title</button>
+      <button onclick="searchData(this.id)" id="search-category">Search by Category</button>
     </div>
     <div id="delete-all"></div>
     <div class="content">

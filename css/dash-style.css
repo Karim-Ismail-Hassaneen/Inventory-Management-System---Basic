@@ -126,7 +126,7 @@ table th {
     width: 93.5%;
 }
 #search-title,
-#search-price {
+#search-category {
     font-size: 18px;
     width: 45%;
     outline: none;
@@ -137,7 +137,7 @@ table th {
     transition: 0.8s ease-in-out;
     cursor: pointer;
 }
-#search-price:hover {
+#search-category:hover {
     letter-spacing: 5px;
 }
 #search-title:hover {
