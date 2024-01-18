@@ -39,6 +39,7 @@ sumbit.onclick = function() {
     allProducts.push(newProducts)
     localStorage.setItem('product', JSON.stringify(allProducts))
     clearData()
+    showData()
 }
 
 const clearData = () => {
@@ -50,4 +51,36 @@ const clearData = () => {
     discount.value = '';
     count.value = '';
     total.innerHTML = ''
+}
+
+const showData = () => {
+    let table = ''
+    for(let i = 0; i < allProducts.length; i++) {
+        table += `
+        <tr>
+            <td>${i}</td>
+            <td>${allProducts[i].title}</td>
+            <td>${allProducts[i].category}</td>
+            <td>${allProducts[i].price}</td>
+            <td>${allProducts[i].taxes}</td>
+            <td>${allProducts[i].ads}</td>
+            <td>${allProducts[i].discount}</td>
+            <td>
+              <button class="action" id="update">Update</button>
+            </td>
+            <td>
+              <button onclick="deleteShowData(${i})" class="action" id="delete">Delete</button>
+            </td>
+          </tr>
+        `
+    }
+
+    document.getElementById('tbody').innerHTML = table;
+}
+showData()
+
+const deleteShowData = (i) => {
+    allProducts.splice(i,1)
+    localStorage.product = JSON.stringify(allProducts)
+    showData()
 }
