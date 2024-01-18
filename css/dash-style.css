@@ -119,3 +119,45 @@ table th {
     transition: 0.7s ease-in-out;
     cursor: pointer;
 }
+.search-btn {
+    display: flex;
+    justify-content: space-between;
+    margin: 1.5rem;
+    width: 93.5%;
+}
+#search-title,
+#search-price {
+    font-size: 18px;
+    width: 45%;
+    outline: none;
+    border: none;
+    background-color: #191c1e;
+    color: whitesmoke;
+    padding: 0.8rem;
+    transition: 0.8s ease-in-out;
+    cursor: pointer;
+}
+#search-price:hover {
+    letter-spacing: 5px;
+}
+#search-title:hover {
+    letter-spacing: 5px;
+}
+#delete-all {
+    margin: 1.5rem;
+}
+
+#delete-all button {
+    font-size: 18px;
+    width: 96%;
+    outline: none;
+    border: none;
+    background-color: #191c1e;
+    color: whitesmoke;
+    padding: 0.8rem;
+    transition: 0.7s ease-in-out;
+    cursor: pointer;
+}
+#delete-all button:hover {
+    letter-spacing: 5px;
+} 
